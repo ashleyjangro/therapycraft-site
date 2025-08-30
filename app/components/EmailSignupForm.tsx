@@ -1,81 +1,101 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function EmailSignupForm() {
-  const formRef = useRef<HTMLDivElement>(null);
+  const [firstName, setFirstName] = useState('');
+  const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const router = useRouter();
 
-  useEffect(() => {
-    // Load AWeber form script
-    const script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = '//forms.aweber.com/form/90/898984390.js';
-    script.id = 'aweber-wjs-kzf3jqeid';
-    script.async = true;
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
 
-    // Check if script already exists
-    if (!document.getElementById('aweber-wjs-kzf3jqeid')) {
-      document.head.appendChild(script);
+    // AWeber form submission
+    const formData = new FormData();
+    formData.append('name', firstName);
+    formData.append('email', email);
+    formData.append('listname', 'awlist6784990'); // Your AWeber list ID
+    formData.append('redirect', 'https://therapycraft.io/thank-you');
+    formData.append('meta_message', '1');
+    formData.append('meta_required', 'name,email');
+
+    try {
+      // Submit to AWeber
+      await fetch('https://www.aweber.com/scripts/addlead.pl', {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors' // AWeber doesn't support CORS
+      });
+
+      // Redirect to thank you page
+      router.push('/thank-you');
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setIsSubmitting(false);
     }
-
-    // Cleanup function
-    return () => {
-      const existingScript = document.getElementById('aweber-wjs-kzf3jqeid');
-      if (existingScript) {
-        existingScript.remove();
-      }
-    };
-  }, []);
+  };
 
   return (
-    <div className="bg-white/20 backdrop-blur rounded-lg p-6 max-w-md mx-auto border border-white/30">
-      <div ref={formRef} className="AW-Form-898984390"></div>
-      <p className="text-sm text-center text-white mt-4">
-        Instant PDF download
-      </p>
+    <div className="w-full max-w-md mx-auto">
+      <h3 className="text-2xl font-bold text-white text-center mb-4">
+        Download Your Free Guide Now
+      </h3>
+      <div className="bg-white rounded-2xl shadow-2xl p-8 border border-green-100">
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div>
+            <input
+              type="text"
+              id="firstName"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+              className="w-full px-4 py-4 bg-gray-50 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 focus:bg-white transition-all text-gray-900 placeholder-gray-500 text-base"
+              placeholder="First Name"
+              required
+            />
+          </div>
+
+          <div>
+            <input
+              type="email"
+              id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-full px-4 py-4 bg-gray-50 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 focus:bg-white transition-all text-gray-900 placeholder-gray-500 text-base"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="w-full bg-green-600 text-white py-4 px-6 rounded-lg font-semibold text-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {isSubmitting ? (
+              <span className="flex items-center justify-center">
+                <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Sending...
+              </span>
+            ) : (
+              'Get My Free Guide Now →'
+            )}
+          </button>
+
+          <p className="text-xs text-center text-gray-500 mt-4">
+            🔒 Your information is 100% secure. No spam, ever.
+          </p>
+        </form>
+      </div>
       
-      <style jsx>{`
-        /* Override AWeber form styles to match our design */
-        :global(.AW-Form-898984390) {
-          background: transparent !important;
-        }
-        :global(.AW-Form-898984390 input[type="text"]),
-        :global(.AW-Form-898984390 input[type="email"]) {
-          width: 100% !important;
-          padding: 12px 16px !important;
-          border-radius: 8px !important;
-          border: 2px solid #d1d5db !important;
-          color: #1f2937 !important;
-          background: white !important;
-          margin-bottom: 12px !important;
-          font-size: 16px !important;
-        }
-        :global(.AW-Form-898984390 input[type="text"]:focus),
-        :global(.AW-Form-898984390 input[type="email"]:focus) {
-          border-color: #10b981 !important;
-          outline: none !important;
-        }
-        :global(.AW-Form-898984390 input[type="submit"]) {
-          width: 100% !important;
-          background: white !important;
-          color: #059669 !important;
-          padding: 12px 24px !important;
-          border-radius: 8px !important;
-          font-size: 18px !important;
-          font-weight: 600 !important;
-          border: none !important;
-          cursor: pointer !important;
-          transition: all 0.2s !important;
-          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
-        }
-        :global(.AW-Form-898984390 input[type="submit"]:hover) {
-          background: #f0fdf4 !important;
-        }
-        :global(.AW-Form-898984390 .AW-Form-Header),
-        :global(.AW-Form-898984390 .AW-Form-Footer) {
-          display: none !important;
-        }
-      `}</style>
+      <p className="text-sm text-center text-white mt-4 font-medium">
+        Instant PDF download • No credit card required
+      </p>
     </div>
   );
 }
