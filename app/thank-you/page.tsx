@@ -14,20 +14,20 @@ export default function ThankYou() {
           <div className="bg-white rounded-lg shadow-xl p-8 md:p-12">
             <div className="text-6xl mb-6">🎉</div>
             
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h1 className="text-3xl md:text-4xl font-bold text-black mb-4">
               Thank You for Downloading TherapyCraft 101!
             </h1>
             
-            <p className="text-xl text-gray-700 mb-8">
+            <p className="text-xl text-black mb-8">
               Your free guide is on its way to your inbox.
             </p>
             
             <div className="bg-green-50 border border-green-200 rounded-lg p-6 mb-8">
-              <h2 className="text-xl font-semibold mb-3">📧 Check Your Email</h2>
-              <p className="text-gray-700 mb-3">
+              <h2 className="text-xl font-semibold mb-3 text-black">📧 Check Your Email</h2>
+              <p className="text-black mb-3">
                 You should receive an email from <strong>Ashley Jangro (ashley@jangro.com)</strong> within the next few minutes with:
               </p>
-              <ul className="text-left max-w-md mx-auto space-y-2 text-gray-700">
+              <ul className="text-left max-w-md mx-auto space-y-2 text-black">
                 <li>✓ Your TherapyCraft 101 PDF download link</li>
                 <li>✓ Quick start instructions</li>
                 <li>✓ Additional resources to get started</li>
@@ -35,18 +35,18 @@ export default function ThankYou() {
             </div>
             
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
-              <h2 className="text-xl font-semibold mb-3">💡 While You Wait...</h2>
-              <p className="text-gray-700 mb-4">
+              <h2 className="text-xl font-semibold mb-3 text-black">💡 While You Wait...</h2>
+              <p className="text-black mb-4">
                 Over the next few days, I'll send you helpful tips and real examples of how other therapists are using Minecraft successfully with their clients.
               </p>
-              <p className="text-gray-700">
+              <p className="text-black">
                 <strong>Didn't receive the email?</strong> Check your spam folder or email me directly at ashley@jangro.com
               </p>
             </div>
             
             <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3">Ready to Go Deeper?</h3>
-              <p className="text-gray-700 mb-4">
+              <h3 className="text-lg font-semibold mb-3 text-black">Ready to Go Deeper?</h3>
+              <p className="text-black mb-4">
                 If you want the complete system with templates, session plans, and clinical resources...
               </p>
               <a
@@ -60,13 +60,13 @@ export default function ThankYou() {
             </div>
             
             <div className="mt-8 pt-8 border-t border-gray-200">
-              <p className="text-gray-600">
+              <p className="text-black">
                 Questions? Email me at{" "}
                 <a href="mailto:ashley@jangro.com" className="text-blue-600 hover:underline">
                   ashley@jangro.com
                 </a>
               </p>
-              <p className="text-gray-600 mt-2">
+              <p className="text-black mt-2">
                 <a href="/" className="text-blue-600 hover:underline">
                   ← Back to TherapyCraft
                 </a>

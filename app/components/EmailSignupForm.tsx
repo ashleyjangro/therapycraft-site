@@ -41,7 +41,7 @@ export default function EmailSignupForm() {
   return (
     <div className="w-full max-w-md mx-auto">
       <h3 className="text-2xl font-bold text-white text-center mb-4">
-        Download Your Free Guide Now
+        Get 3 Real Case Studies Free
       </h3>
       <div className="bg-white rounded-2xl shadow-2xl p-8 border border-green-100">
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -51,7 +51,7 @@ export default function EmailSignupForm() {
               id="firstName"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
-              className="w-full px-4 py-4 bg-gray-50 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 focus:bg-white transition-all text-gray-900 placeholder-gray-500 text-base"
+              className="w-full px-4 py-4 bg-gray-50 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 focus:bg-white transition-all text-black placeholder-gray-500 text-base"
               placeholder="First Name"
               required
             />
@@ -63,7 +63,7 @@ export default function EmailSignupForm() {
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-4 bg-gray-50 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 focus:bg-white transition-all text-gray-900 placeholder-gray-500 text-base"
+              className="w-full px-4 py-4 bg-gray-50 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 focus:bg-white transition-all text-black placeholder-gray-500 text-base"
               placeholder="Email Address"
               required
             />
@@ -87,7 +87,7 @@ export default function EmailSignupForm() {
             )}
           </button>
 
-          <p className="text-xs text-center text-gray-500 mt-4">
+          <p className="text-xs text-center text-black mt-4">
             🔒 Your information is 100% secure. No spam, ever.
           </p>
         </form>

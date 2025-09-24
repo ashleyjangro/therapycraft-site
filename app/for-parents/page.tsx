@@ -67,28 +67,28 @@ export default function ForParents() {
         <div className="absolute inset-0 bg-white/90"></div>
         <div className="relative z-10">
           <div className="container mx-auto px-6 max-w-4xl">
-            <h2 className="text-3xl font-bold text-center mb-12">
+            <h2 className="text-3xl font-bold text-center mb-12 text-black">
               Does This Sound Like Your Child?
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center bg-white p-6 rounded-lg shadow-md">
                 <div className="text-4xl mb-4">😤</div>
-                <h3 className="font-semibold mb-2">"I Don't Want to Go"</h3>
-                <p className="text-gray-600">
+                <h3 className="font-semibold mb-2 text-black">"I Don't Want to Go"</h3>
+                <p className="text-black">
                   Therapy feels scary, boring, or pointless to them
                 </p>
               </div>
               <div className="text-center bg-white p-6 rounded-lg shadow-md">
                 <div className="text-4xl mb-4">🎮</div>
-                <h3 className="font-semibold mb-2">Lives in Digital Worlds</h3>
-                <p className="text-gray-600">
+                <h3 className="font-semibold mb-2 text-black">Lives in Digital Worlds</h3>
+                <p className="text-black">
                   Spends hours on Minecraft, Roblox, or other games
                 </p>
               </div>
               <div className="text-center bg-white p-6 rounded-lg shadow-md">
                 <div className="text-4xl mb-4">🤐</div>
-                <h3 className="font-semibold mb-2">Won't Open Up</h3>
-                <p className="text-gray-600">
+                <h3 className="font-semibold mb-2 text-black">Won't Open Up</h3>
+                <p className="text-black">
                   "Fine" and "I don't know" are their favorite responses
                 </p>
               </div>
@@ -106,37 +106,37 @@ export default function ForParents() {
         <div className="absolute inset-0 bg-gray-50/95"></div>
         <div className="relative z-10">
           <div className="container mx-auto px-6 max-w-4xl">
-            <h2 className="text-3xl font-bold text-center mb-4">
+            <h2 className="text-3xl font-bold text-center mb-4 text-black">
               What if Therapy Felt Like Playing Their Favorite Game?
             </h2>
-            <p className="text-center text-gray-600 mb-12 text-lg">
+            <p className="text-center text-black mb-12 text-lg">
               TherapyCraft uses Minecraft to create a safe, comfortable space where kids naturally open up
             </p>
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h3 className="text-2xl font-semibold mb-4">Why Minecraft Works for Therapy:</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-black">Why Minecraft Works for Therapy:</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">✓</span>
-                    <span>
+                    <span className="text-black">
                       <strong>They're already comfortable there:</strong> No scary therapy office
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">✓</span>
-                    <span>
+                    <span className="text-black">
                       <strong>They become the expert:</strong> Teaching the therapist builds confidence
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">✓</span>
-                    <span>
+                    <span className="text-black">
                       <strong>Natural metaphors emerge:</strong> Building walls = discussing boundaries
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">✓</span>
-                    <span>
+                    <span className="text-black">
                       <strong>Side-by-side feels safer:</strong> Less pressure than direct eye contact
                     </span>
                   </li>
@@ -159,19 +159,19 @@ export default function ForParents() {
       {/* What Parents Say */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="text-3xl font-bold text-center mb-12 text-black">
             What Parents Tell Me
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-blue-50 p-6 rounded-lg">
-              <p className="text-gray-700 mb-4 italic">
+              <p className="text-black mb-4 italic">
                 "For the first time ever, my son asked when his next therapy appointment is. 
                 He actually looks forward to going now."
               </p>
               <p className="font-semibold text-blue-700">Parent of 15-year-old</p>
             </div>
             <div className="bg-green-50 p-6 rounded-lg">
-              <p className="text-gray-700 mb-4 italic">
+              <p className="text-black mb-4 italic">
                 "She's been talking about things at home that she learned in Minecraft therapy. 
                 It's like she finally has words for her feelings."
               </p>
@@ -186,20 +186,20 @@ export default function ForParents() {
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6">
+              <h2 className="text-3xl font-bold mb-6 text-black">
                 Meet Ashley Jangro, LPCC
               </h2>
-              <p className="text-gray-700 mb-4">
+              <p className="text-black mb-4">
                 I'm a licensed professional clinical counselor and certified life coach in Colorado. 
                 I specialize in working with kids and teens who are struggling with anxiety, depression, 
                 trauma, and life transitions.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-black mb-4">
                 I started incorporating Minecraft into my practice when I realized how much more 
                 comfortable and engaged my young clients became when we "played" together rather 
                 than just talked.
               </p>
-              <p className="text-gray-700 font-medium">
+              <p className="text-black font-medium">
                 Every child deserves to feel heard, understood, and supported-sometimes that happens 
                 best in the worlds they already love.
               </p>
@@ -253,51 +253,51 @@ export default function ForParents() {
       {/* FAQ for Parents */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6 max-w-3xl">
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="text-3xl font-bold text-center mb-12 text-black">
             Common Parent Questions
           </h2>
           <div className="space-y-6">
             <div>
-              <h3 className="font-semibold text-lg mb-2">
+              <h3 className="font-semibold text-lg mb-2 text-black">
                 Is this real therapy or just playing games?
               </h3>
-              <p className="text-gray-700">
+              <p className="text-black">
                 This is legitimate, evidence-based therapy that uses Minecraft as a therapeutic tool. 
                 Sessions have clear therapeutic goals and are documented just like traditional therapy.
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-lg mb-2">
+              <h3 className="font-semibold text-lg mb-2 text-black">
                 What if my child doesn't play Minecraft?
               </h3>
-              <p className="text-gray-700">
+              <p className="text-black">
                 No problem! Many of my clients learn Minecraft during our sessions. The learning process 
                 itself can be therapeutic and confidence-building.
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-lg mb-2">
+              <h3 className="font-semibold text-lg mb-2 text-black">
                 How is this different from just playing Minecraft?
               </h3>
-              <p className="text-gray-700">
+              <p className="text-black">
                 I use specific therapeutic techniques, guided conversations, and purposeful activities 
                 within Minecraft. Every session has therapeutic objectives and clinical documentation.
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-lg mb-2">
+              <h3 className="font-semibold text-lg mb-2 text-black">
                 Is this covered by insurance?
               </h3>
-              <p className="text-gray-700">
+              <p className="text-black">
                 Yes, Minecraft therapy sessions can be billed to insurance just like traditional therapy 
                 sessions. I provide all necessary documentation and codes.
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-lg mb-2">
+              <h3 className="font-semibold text-lg mb-2 text-black">
                 What ages work best for this approach?
               </h3>
-              <p className="text-gray-700">
+              <p className="text-black">
                 I primarily work with ages 10-18, though I've had success with younger children 
                 and young adults as well. It depends on the individual child's comfort with technology.
               </p>
