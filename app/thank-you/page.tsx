@@ -2,8 +2,8 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Thank You - Download Your TherapyCraft Guide | Minecraft Therapy",
-  description: "Thank you for downloading the TherapyCraft 101 guide. Check your email for your free Minecraft therapy training guide.",
+  title: "Thank You - Download Your Clinical Case Studies Guide | TherapyCraft",
+  description: "Thank you for downloading the TherapyCraft clinical case studies guide. See real Minecraft therapy breakthroughs with anxious, resistant, and traumatized clients.",
 };
 
 export default function ThankYou() {
@@ -13,24 +13,41 @@ export default function ThankYou() {
         <div className="max-w-3xl mx-auto text-center">
           <div className="bg-white rounded-lg shadow-xl p-8 md:p-12">
             <div className="text-6xl mb-6">🎉</div>
-            
+
             <h1 className="text-3xl md:text-4xl font-bold text-black mb-4">
-              Thank You for Downloading TherapyCraft 101!
+              Thank You! Your Clinical Case Studies Guide is Ready
             </h1>
-            
+
             <p className="text-xl text-black mb-8">
-              Your free guide is on its way to your inbox.
+              Download your free guide below and check your email for additional resources.
             </p>
-            
+
             <div className="bg-green-50 border border-green-200 rounded-lg p-6 mb-8">
-              <h2 className="text-xl font-semibold mb-3 text-black">📧 Check Your Email</h2>
+              <h2 className="text-xl font-semibold mb-3 text-black">📥 Download Your Guide Now</h2>
+              <p className="text-black mb-4">
+                <strong>TherapyCraft in Action: 3 Case Studies from Minecraft Therapy</strong>
+              </p>
+              <a
+                href="/TherapyCraft-Case-Studies.pdf"
+                download
+                className="inline-block bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors shadow-lg mb-3"
+              >
+                Download Case Studies Guide (PDF)
+              </a>
+              <p className="text-sm text-black">
+                See real therapeutic breakthroughs with anxious, resistant, and traumatized clients
+              </p>
+            </div>
+
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
+              <h2 className="text-xl font-semibold mb-3 text-black">📧 Check Your Email Too</h2>
               <p className="text-black mb-3">
-                You should receive an email from <strong>Ashley Jangro (ashley@jangro.com)</strong> within the next few minutes with:
+                You should also receive an email from <strong>Ashley Jangro (ashley@jangro.com)</strong> with:
               </p>
               <ul className="text-left max-w-md mx-auto space-y-2 text-black">
-                <li>✓ Your TherapyCraft 101 PDF download link</li>
-                <li>✓ Quick start instructions</li>
-                <li>✓ Additional resources to get started</li>
+                <li>✓ Your case studies guide download link</li>
+                <li>✓ Quick implementation tips</li>
+                <li>✓ Additional clinical resources</li>
               </ul>
             </div>
             
@@ -45,17 +62,15 @@ export default function ThankYou() {
             </div>
             
             <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3 text-black">Ready to Go Deeper?</h3>
+              <h3 className="text-lg font-semibold mb-3 text-black">Ready for the Complete Professional System?</h3>
               <p className="text-black mb-4">
-                If you want the complete system with templates, session plans, and clinical resources...
+                Get everything you need to confidently implement Minecraft therapy: setup guides, legal templates, session plans, treatment roadmaps, and marketing materials.
               </p>
               <a
-                href="https://ashleyjangro.thrivecart.com/minecraft-therapy/"
+                href="/sales"
                 className="inline-block bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
               >
-                Get the Complete Starter System for $29.99
+                See the Complete System - $59
               </a>
             </div>
             

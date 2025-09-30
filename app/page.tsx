@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 import EmailSignupForm from "./components/EmailSignupForm";
 
 export const metadata: Metadata = {
-  title: "Start Offering $150-250/Session Minecraft Therapy | Complete TherapyCraft Professional System",
-  description: "Add premium Minecraft therapy to your practice in 30 days. Complete system includes setup, legal templates, session plans, and marketing materials. ROI: First client pays for everything.",
-  keywords: "minecraft therapy training, premium therapy services, digital therapy, minecraft therapy certification, therapycraft system, high-value therapy, specialty therapy services, minecraft therapy business",
+  title: "See Real Minecraft Therapy Breakthroughs | 3 Case Studies That Transformed My Practice",
+  description: "Discover how Minecraft therapy creates breakthroughs with resistant teens, anxious kids, and trauma survivors. Free case study guide shows real clinical outcomes and transformations.",
+  keywords: "minecraft therapy case studies, minecraft therapy outcomes, teen therapy breakthroughs, resistant teen therapy, gaming therapy results, therapycraft success stories, minecraft clinical outcomes, digital therapy transformations",
   openGraph: {
-    title: "Start Offering $150-250/Session Minecraft Therapy | TherapyCraft Professional System",
+    title: "3 Real Minecraft Therapy Breakthroughs That Changed Everything",
     description: "Complete professional system to add premium Minecraft therapy to your practice. Setup in 30 days, first client pays for everything.",
     type: "website",
     images: ["/images/Minecraft Therapy Hero.png"],
@@ -65,28 +65,25 @@ export default function Home() {
         <div className="container mx-auto px-6 py-16 md:py-24">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
-              <span className="text-green-400">Minecraft Therapy</span> Training:
-              <br />Complete Professional System
+              How to Use <span className="text-green-400">Minecraft</span> as a
+              <br />Powerful Therapy Tool
             </h1>
             <p className="text-xl md:text-2xl text-white mb-8 drop-shadow-md">
-              Transform therapy sessions with kids and teens who struggle with traditional talk therapy - using a world they already love.
+              See how to use Minecraft to get real breakthroughs with anxious, resistant, and traumatized clients
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="#get-system"
-                className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors shadow-lg"
-              >
-                Get Complete System
-              </a>
+            <div className="flex justify-center">
               <a
                 href="#free-guide"
-                className="bg-white text-green-600 border-2 border-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-50 transition-colors"
+                className="bg-green-600 text-white px-10 py-4 rounded-lg text-xl font-bold hover:bg-green-700 transition-colors shadow-lg hover:shadow-xl"
               >
-                Start With Free Guide
+                Download Clinical Guide Free
               </a>
             </div>
-            <p className="mt-4 text-green-100">
-              Complete implementation system • Ready to launch in 30 days • Premium specialty service
+            <p className="mt-4 text-green-100 text-sm">
+              Ready to get the complete professional system now? 
+              <a href="/sales" className="underline hover:text-white transition-colors">
+                See full implementation system →
+              </a>
             </p>
           </div>
         </div>
@@ -102,34 +99,43 @@ export default function Home() {
         <div className="relative z-10">
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl font-bold text-center mb-12 text-black">
-            Reach Kids Who Don't Respond to Traditional Therapy
+            What You'll Experience When You Add Minecraft to Your Practice
           </h2>
           <p className="text-center text-black mb-8">
-            TherapyCraft: The Complete Professional Minecraft Therapy System
+            What you'll discover when you see Minecraft through a therapeutic lens
           </p>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <div className="bg-green-50 border border-green-200 p-6 rounded-lg text-center">
-              <h3 className="font-semibold text-lg mb-2 text-green-700">Breakthrough Connection</h3>
+              <h3 className="font-semibold text-lg mb-2 text-green-700">Become the Therapist Kids Want to See</h3>
               <p className="text-black">
-                Meet clients in a world they love. Build trust and rapport faster than traditional talk therapy allows.
+                Watch resistant clients light up and actually look forward to sessions. Parents will ask how you did it.
               </p>
             </div>
             <div className="bg-blue-50 border border-blue-200 p-6 rounded-lg text-center">
-              <h3 className="font-semibold text-lg mb-2 text-blue-700">Evidence-Based Approach</h3>
+              <h3 className="font-semibold text-lg mb-2 text-blue-700">Turn Your Hardest Cases Into Success Stories</h3>
               <p className="text-black">
-                Combines play therapy, CBT, and narrative therapy principles with the engagement power of Minecraft.
+                Reach kids who won't talk, connect with teens who've shut down, and create breakthroughs where others failed.
               </p>
             </div>
             <div className="bg-purple-50 border border-purple-200 p-6 rounded-lg text-center">
-              <h3 className="font-semibold text-lg mb-2 text-purple-700">Professional Implementation</h3>
+              <h3 className="font-semibold text-lg mb-2 text-purple-700">Watch Silent Kids Become Storytellers</h3>
               <p className="text-black">
-                Complete HIPAA-compliant system with legal templates, session plans, and clinical documentation.
+                Transform "I don't know" responses into deep therapeutic conversations through the power of virtual worlds.
               </p>
             </div>
           </div>
           <p className="text-center text-black mt-6 font-semibold">
             You don't need gaming experience. You just need the right therapeutic framework.
           </p>
+          <div className="text-center mt-8">
+            <a
+              href="#free-guide"
+              className="inline-block bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
+            >
+              See How Minecraft Transformed My Practice
+            </a>
+            <p className="text-sm text-gray-600 mt-2">3 real client breakthroughs + clinical insights</p>
+          </div>
         </div>
         </div>
       </section>
@@ -187,6 +193,15 @@ export default function Home() {
               <p className="mt-6 text-black font-medium">
                 You bring the clinical lens. Minecraft brings the world.
               </p>
+              <div className="mt-8">
+                <a
+                  href="#free-guide"
+                  className="inline-block bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
+                >
+                  Get Real Session Examples
+                </a>
+                <p className="text-sm text-gray-600 mt-2">See exactly how these techniques work in practice</p>
+              </div>
             </div>
             <div className="order-1 md:order-2">
               <Image
@@ -203,24 +218,24 @@ export default function Home() {
       </section>
 
       {/* Free Guide CTA */}
-      <section id="free-guide" className="py-16 bg-green-600 text-white">
+      <section id="free-guide" className="py-16 bg-blue-600 text-white">
         <div className="container mx-auto px-6 max-w-3xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Start Here: Free TherapyCraft 101 Guide
+            Clinical Guide: 3 Real Case Studies from Minecraft Therapy
           </h2>
-          <p className="text-xl mb-8 text-green-50">
-            Get the foundation - see why therapists are charging $150-250/session for this specialty service
+          <p className="text-xl mb-8 text-blue-100">
+            See exactly how Minecraft creates breakthroughs with clients who seemed unreachable
           </p>
           <div className="bg-white/10 backdrop-blur rounded-lg p-6 mb-8">
-            <h3 className="text-xl font-semibold mb-4">What You'll Discover:</h3>
+            <h3 className="text-xl font-semibold mb-4">What You'll Learn:</h3>
             <ul className="text-left max-w-lg mx-auto space-y-2">
-              <li>✓ Which version of Minecraft to use (and what to avoid, especially for Mac users)</li>
-              <li>✓ The privacy issue most therapists miss</li>
-              <li>✓ Creative vs. Survival Mode - when to use each</li>
-              <li>✓ Why your setup method determines client safety</li>
-              <li>✓ The science behind why kids open up in virtual worlds</li>
-              <li>✓ Why Minecraft therapy works, even if you've never played before</li>
-              <li>✓ How to price and position this premium service</li>
+              <li>✓ How to use Minecraft's building mechanics to develop client confidence</li>
+              <li>✓ How to use game metaphors to help clients express difficult emotions</li>
+              <li>✓ How to turn Minecraft collaboration into therapeutic partnership</li>
+              <li>✓ How to use role reversals in Minecraft to shift power dynamics</li>
+              <li>✓ How to help clients process trauma through digital metaphors they can control</li>
+              <li>✓ How to use strategic vulnerability in Minecraft to build instant rapport</li>
+              <li>✓ How to use Minecraft to bypass traditional therapy resistance</li>
             </ul>
           </div>
           <EmailSignupForm />
@@ -231,63 +246,63 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl font-bold text-center mb-4 text-black">
-            The Results That Changed Everything
+            Real Breakthroughs from My Practice
           </h2>
           <p className="text-center text-black mb-12">
-            3 case studies that prove Minecraft isn't just play - it's transformation
+            Every week, I watch Minecraft create moments that traditional therapy couldn't reach
           </p>
           
           <div className="space-y-8">
             <div className="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg">
-              <h3 className="font-semibold text-lg mb-3 text-green-700">Case Study #1: The Anxious Teen Who Found Her Voice</h3>
+              <h3 className="font-semibold text-lg mb-3 text-green-700">The Side-by-Side Effect</h3>
               <p className="text-black mb-3">
-                She came to me with intense anxiety, responding only in whispers and "I don't know." Traditional 
-                talk therapy left her feeling exposed and overwhelmed.
+                Teens who barely speak in sessions suddenly start talking when we're playing side by side. 
+                The same kids who give one-word answers begin sharing stories, concerns, and insights naturally while building together.
               </p>
               <p className="text-black italic">
-                <strong>8 weeks later:</strong> She was confidently teaching me Minecraft strategies, and that confidence 
-                carried over. She started speaking up in class, connecting with peers, and advocating for herself at home.
+                Parents always recognize this: "That's exactly what happens when he's gaming with friends - he just talks and talks!" 
+                There's something about shared focus that bypasses the pressure of direct conversation and lets authentic communication flow.
               </p>
             </div>
 
             <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg">
-              <h3 className="font-semibold text-lg mb-3 text-blue-700">Case Study #2: The Child Processing Divorce</h3>
+              <h3 className="font-semibold text-lg mb-3 text-blue-700">The Power of Role Reversal</h3>
               <p className="text-black mb-3">
-                A young teen carrying enormous tension from his parents' divorce. He minimized conflict, 
-                buried his emotions, and blamed himself for everything.
+                When anxious clients become the expert teaching you Minecraft, everything changes in your therapeutic relationship. 
+                By letting them guide you through their worlds, you're no longer the authority figure they need to impress or please.
               </p>
               <p className="text-black italic">
-                <strong>The breakthrough:</strong> He described his father as a "creeper" - explosive and unpredictable. 
-                This metaphor opened months of productive processing he couldn't access through direct conversation.
+                Suddenly you're working with a confident, capable teacher instead of a withdrawn, anxious client. 
+                This shift unlocks therapeutic conversations that would never happen in traditional talk therapy settings.
               </p>
             </div>
 
             <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-lg">
-              <h3 className="font-semibold text-lg mb-3 text-purple-700">Case Study #3: The Resistant Teen Who Learned to Trust</h3>
+              <h3 className="font-semibold text-lg mb-3 text-purple-700">Breaking Down Therapeutic Walls</h3>
               <p className="text-black mb-3">
-                After being humiliated by an authority figure, he shut down completely. Refused traditional therapy. 
-                Wouldn't engage with any adult trying to help.
+                For kids who struggle with adult relationships, Minecraft becomes a bridge. We work as 
+                a team-sharing resources, protecting each other from mobs, building together.
               </p>
               <p className="text-black italic">
-                <strong>The shift:</strong> When I needed backup in Minecraft and he saved me from mobs, everything changed. 
-                We became teammates instead of therapist/client. He's now back in school and thriving.
+                When clients trust you as a gaming partner, they're suddenly open to your therapeutic guidance. 
+                The connection you build in Minecraft transfers directly to your clinical work, making every intervention more effective.
               </p>
             </div>
           </div>
 
           <div className="mt-12 p-6 bg-green-600 rounded-lg text-center">
             <p className="text-xl text-white font-bold mb-4">
-              These Are Just the Highlights
+              See How It All Comes Together
             </p>
             <p className="text-green-100 mb-6">
-              Get the complete case studies with detailed therapeutic techniques, session excerpts, 
-              and clinical insights that show you exactly how to create these breakthroughs in your practice.
+              Get the complete clinical guide with the specific techniques, real session examples, 
+              and professional insights that show you exactly how to implement Minecraft therapy in your practice.
             </p>
             <a
               href="#free-guide"
               className="inline-block bg-white text-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 transition-colors"
             >
-              Download Full Case Studies Free
+              Get Clinical Guide Now
             </a>
           </div>
         </div>
@@ -302,18 +317,27 @@ export default function Home() {
                 Meet Your Guide: Ashley Jangro, LPCC & Life Coach
               </h2>
               <p className="text-black mb-4">
-                Hi, I'm Ashley. I'm an LPCC, certified life coach, and educator who specializes in helping kids 
-                and teens process emotions, build self-awareness, and feel safe in their bodies and relationships.
+                Hi, I'm Ashley. I'm a therapist, life coach, and longtime educator. I specialize in helping kids, 
+                teens, and parents work through emotional overwhelm, trauma, identity, and relationship challenges. 
+                My approach blends evidence-based modalities with creativity and sometimes that even means using video games.
               </p>
               <p className="text-black mb-4">
-                I started using Minecraft in my own sessions after seeing how quickly kids opened up, relaxed, 
-                and engaged when the therapy room looked like a world they already loved. Since then, I've 
-                developed tools and systems for therapists who want to do the same-without needing to be 
-                tech experts or gamers.
+                I created TherapyCraft after watching my Minecraft-loving clients come alive in session. Inside the game, 
+                they communicated in ways they couldn't always access in a traditional office. Once I saw how powerful 
+                this was, I began developing tools, safety systems, and frameworks for using Minecraft as a legitimate therapeutic space.
               </p>
-              <p className="text-black font-medium">
-                TherapyCraft is here to help you do that with ease.
+              <p className="text-black font-medium mb-6">
+                Now I teach other therapists how to bring this work into their practices too, ethically, confidently, and with creativity.
               </p>
+              <div>
+                <a
+                  href="#free-guide"
+                  className="inline-block bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
+                >
+                  See How I Do It
+                </a>
+                <p className="text-sm text-gray-600 mt-2">Get the clinical guide with real examples</p>
+              </div>
             </div>
             <div>
               <Image
@@ -328,137 +352,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Paid Product */}
-      <section id="get-system" className="py-16 relative" style={{
-        backgroundImage: `url('/images/TherapyCraft_Backgroud.webp')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }}>
-        <div className="absolute inset-0 bg-gray-50/95"></div>
-        <div className="relative z-10">
-        <div className="container mx-auto px-6 max-w-5xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">
-              The Complete TherapyCraft Professional System
-            </h2>
-            <p className="text-xl text-black mb-4">
-              Everything you need to confidently integrate Minecraft into your therapeutic practice
-            </p>
-            <div className="bg-green-100 border border-green-200 rounded-lg p-4 max-w-2xl mx-auto">
-              <p className="text-green-800 font-semibold">
-                ⚡ Ready to launch in 30 days • Complete professional setup • Premium specialty service (therapists typically charge $150-250/session)
-              </p>
-            </div>
-          </div>
-          
-          <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
-            <div className="bg-gradient-to-r from-green-600 to-blue-600 text-white p-6 text-center">
-              <h3 className="text-2xl font-bold mb-2">Complete Professional Implementation</h3>
-              <p className="text-green-100">No setup guesswork • No missing pieces • Ready to launch</p>
-            </div>
-            
-            <div className="p-8">
-              <div className="grid md:grid-cols-2 gap-8">
-                <div>
-                  <h4 className="text-xl font-semibold mb-4 text-black">🏗️ Setup & Legal Framework</h4>
-                  <ul className="space-y-2 text-black mb-6">
-                    <li>✓ Step-by-step technical setup (complete Realm walkthrough)</li>
-                    <li>✓ HIPAA-compliant consent forms (copy & paste ready)</li>
-                    <li>✓ Parent communication templates</li>
-                    <li>✓ Privacy & safety protocols</li>
-                    <li>✓ Insurance documentation templates</li>
-                  </ul>
-
-                  <h4 className="text-xl font-semibold mb-4 text-black">🎯 Clinical Resources</h4>
-                  <ul className="space-y-2 text-black mb-6">
-                    <li>✓ 12-24 week treatment roadmaps by diagnosis</li>
-                    <li>✓ 50+ therapeutic activities and prompts</li>
-                    <li>✓ Session planning templates</li>
-                    <li>✓ Progress tracking tools</li>
-                    <li>✓ Crisis intervention protocols</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h4 className="text-xl font-semibold mb-4 text-black">💼 Practice Integration</h4>
-                  <ul className="space-y-2 text-black mb-6">
-                    <li>✓ How to position this specialty service professionally</li>
-                    <li>✓ Marketing templates (Psychology Today, website copy)</li>
-                    <li>✓ Referral partner education materials</li>
-                    <li>✓ Client onboarding and parent communication</li>
-                    <li>✓ FAQ scripts for common questions</li>
-                  </ul>
-
-                  <h4 className="text-xl font-semibold mb-4 text-black">📚 Professional Support</h4>
-                  <ul className="space-y-2 text-black mb-6">
-                    <li>✓ Research citations & clinical rationale</li>
-                    <li>✓ Supervisor approval letter templates</li>
-                    <li>✓ Troubleshooting guides</li>
-                    <li>✓ Long-term client management systems</li>
-                    <li>✓ Continuing education documentation</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mt-8">
-                <h4 className="text-lg font-semibold mb-3 text-blue-800">⏱️ Time Savings Breakdown:</h4>
-                <div className="grid md:grid-cols-3 gap-4 text-sm">
-                  <div>
-                    <p className="font-medium text-black">Setup Research: 15-20 hours saved</p>
-                    <p className="text-blue-700">Complete technical walkthrough included</p>
-                  </div>
-                  <div>
-                    <p className="font-medium text-black">Form Templates: 10-15 hours saved</p>
-                    <p className="text-blue-700">Done-for-you HIPAA compliance</p>
-                  </div>
-                  <div>
-                    <p className="font-medium text-black">Session Planning: 20-30 hours saved</p>
-                    <p className="text-blue-700">Activities, prompts, and protocols ready</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-gray-50 p-8 text-center">
-              <div className="mb-6">
-                <p className="text-sm text-black line-through mb-1">Individual consultation value: $500+</p>
-                <p className="text-5xl font-bold text-green-600 mb-2">$59</p>
-                <p className="text-black">One-time investment • Lifetime access</p>
-              </div>
-              
-              <a
-                href="https://ashleyjangro.thrivecart.com/minecraft-therapy/"
-                className="inline-block bg-green-600 text-white px-12 py-4 rounded-lg text-xl font-bold hover:bg-green-700 transition-colors shadow-lg hover:shadow-xl mb-4"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Get Complete System - $59
-              </a>
-              
-              <div className="flex flex-col sm:flex-row justify-center items-center gap-4 text-sm text-black">
-                <span>✓ Instant digital access</span>
-                <span>✓ Complete in 30 days or less</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
+      {/* FAQ about Minecraft Therapy */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6 max-w-3xl">
           <h2 className="text-3xl font-bold text-center mb-12 text-black">
-            Common Questions
+            Common Questions About Minecraft Therapy
           </h2>
           <div className="space-y-6">
             <div>
               <h3 className="font-semibold text-lg mb-2 text-black">
-                Do I need to be good at Minecraft to use this system?
+                Do I need to know how to play Minecraft?
               </h3>
               <p className="text-black">
-                Not at all! The system includes complete beginner tutorials. Your expertise is in therapy, not gaming. 
-                Many therapists find that being a "learner" alongside clients actually strengthens rapport and therapeutic connection.
+                Not at all! Many of the most successful therapeutic moments happen when you're learning alongside your client. 
+                Being the "student" while they're the "teacher" can completely transform your therapeutic relationship.
               </p>
             </div>
             <div>
@@ -466,17 +373,8 @@ export default function Home() {
                 How is this different from regular play therapy?
               </h3>
               <p className="text-black">
-                Minecraft therapy combines the engagement of digital worlds with evidence-based therapeutic approaches. 
-                It's particularly effective for teens who've outgrown traditional play therapy but aren't ready for pure talk therapy.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-semibold text-lg mb-2 text-black">
-                How long until I can start seeing clients?
-              </h3>
-              <p className="text-black">
-                Most therapists are ready within 2-4 weeks. The system includes everything: technical setup, 
-                legal templates, session plans, and marketing materials. No additional research needed.
+                Minecraft therapy reaches clients that traditional play therapy often can't - especially teens who've "outgrown" toys 
+                but aren't ready for pure talk therapy. The digital environment creates unique opportunities for metaphorical work and collaboration.
               </p>
             </div>
             <div>
@@ -484,19 +382,32 @@ export default function Home() {
                 Is this covered by insurance?
               </h3>
               <p className="text-black">
-                This is typically a private-pay specialty service (which allows for higher rates). The system 
-                includes templates for insurance documentation when applicable.
+                Yes! I've successfully used insurance to cover all my Minecraft therapy sessions. Want to know exactly how I document and bill for this?{' '}
+                <a href="/sales" className="text-green-600 hover:text-green-700 underline font-medium">
+                  The complete system includes my exact methods →
+                </a>
               </p>
             </div>
             <div>
               <h3 className="font-semibold text-lg mb-2 text-black">
-                What if my supervisor has questions?
+                What ages does this work with?
               </h3>
               <p className="text-black">
-                The system includes research citations, clinical rationale, and a supervisor approval letter 
-                template to address common concerns about digital therapy modalities.
+                I've seen amazing results with clients from 6-19, and honestly, some of my adult clients love it too! 
+                It works with anyone who's still interested in playing Minecraft, but it's especially powerful with tweens and teens (10-16) 
+                who are gaming-interested but struggling to engage in traditional therapy approaches.
               </p>
             </div>
+          </div>
+          
+          <div className="text-center mt-12">
+            <a
+              href="#free-guide"
+              className="inline-block bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors shadow-lg"
+            >
+              Get the Clinical Guide Now
+            </a>
+            <p className="text-sm text-gray-600 mt-2">See these concepts in action with real case studies</p>
           </div>
         </div>
       </section>
@@ -527,23 +438,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-16 bg-gradient-to-br from-green-600 to-blue-600 text-white">
-        <div className="container mx-auto px-6 max-w-3xl text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            See What's Possible in Your Practice
-          </h2>
-          <p className="text-xl mb-8">
-            Download 3 real case studies that show exactly how Minecraft creates therapeutic breakthroughs.
-          </p>
-          <a
-            href="#free-guide"
-            className="inline-block bg-white text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-50 transition-colors"
-          >
-            Get Free Case Studies Now
-          </a>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-gray-400 py-8">
