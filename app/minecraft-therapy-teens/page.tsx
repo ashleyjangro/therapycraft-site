@@ -295,7 +295,7 @@ export default function MinecraftTherapyTeens() {
                 Is Minecraft therapy covered by insurance?
               </h3>
               <p className="text-black">
-                Yes, Minecraft therapy sessions can be billed to insurance just like traditional therapy sessions. I provide all necessary documentation and billing codes.
+                Yes, Minecraft therapy sessions can be billed to insurance just like traditional therapy sessions. I currently accept Medicaid and United Health Care.
               </p>
             </div>
             <div>
