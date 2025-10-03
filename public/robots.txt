@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /TherapyCraft-Case-Studies.pdf
 
 Sitemap: https://therapycraft.io/sitemap.xml
