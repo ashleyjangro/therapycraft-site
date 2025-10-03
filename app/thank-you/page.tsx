@@ -67,7 +67,7 @@ export default function ThankYou() {
                 Get everything you need to confidently implement Minecraft therapy: setup guides, legal templates, session plans, treatment roadmaps, and marketing materials.
               </p>
               <a
-                href="/sales"
+                href="/complete-system"
                 className="inline-block bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
               >
                 See the Complete System - $59

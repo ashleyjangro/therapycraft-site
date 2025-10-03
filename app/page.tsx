@@ -49,9 +49,9 @@ export default function Home() {
       {/* Parent Banner */}
       <div className="bg-blue-600 text-white py-2 text-center">
         <p className="text-sm">
-          <span className="font-medium">Parents:</span> Looking for help for your child? 
-          <a href="/for-parents" className="underline ml-2 hover:text-blue-200">
-            Learn about TherapyCraft for families →
+          <span className="font-medium">Parents:</span> Looking for help for your child?
+          <a href="/minecraft-therapy-teens" className="underline ml-2 hover:text-blue-200">
+            Learn about TherapyCraft for kids and teens →
           </a>
         </p>
       </div>
@@ -364,8 +364,12 @@ export default function Home() {
                 Do I need to know how to play Minecraft?
               </h3>
               <p className="text-black">
-                Not at all! Many of the most successful therapeutic moments happen when you're learning alongside your client. 
-                Being the "student" while they're the "teacher" can completely transform your therapeutic relationship.
+                Not at all! Many of the most successful therapeutic moments happen when you're learning alongside your client.
+                Being the "student" while they're the "teacher" can completely transform your therapeutic relationship.{' '}
+                <span className="text-sm text-gray-600">(Want step-by-step guidance?{' '}
+                <a href="/complete-system" className="text-green-600 hover:text-green-700 underline">
+                  See the complete system →
+                </a>)</span>
               </p>
             </div>
             <div>
@@ -382,9 +386,9 @@ export default function Home() {
                 Is this covered by insurance?
               </h3>
               <p className="text-black">
-                Yes! I've successfully used insurance to cover all my Minecraft therapy sessions. Want to know exactly how I document and bill for this?{' '}
-                <a href="/sales" className="text-green-600 hover:text-green-700 underline font-medium">
-                  The complete system includes my exact methods →
+                Yes! I've successfully used insurance to cover all my Minecraft therapy sessions. Want the exact documentation templates I use?{' '}
+                <a href="/complete-system" className="text-green-600 hover:text-green-700 underline font-medium">
+                  The Complete TherapyCraft System includes ready-to-use forms →
                 </a>
               </p>
             </div>
