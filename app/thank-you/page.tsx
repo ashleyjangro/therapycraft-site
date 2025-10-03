@@ -4,6 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Thank You - Download Your Clinical Case Studies Guide | TherapyCraft",
   description: "Thank you for downloading the TherapyCraft clinical case studies guide. See real Minecraft therapy breakthroughs with anxious, resistant, and traumatized clients.",
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+  },
 };
 
 export default function ThankYou() {
