@@ -80,8 +80,8 @@ export default function Home() {
               </a>
             </div>
             <p className="mt-4 text-green-100 text-sm">
-              Ready to get the complete professional system now? 
-              <a href="/sales" className="underline hover:text-white transition-colors">
+              Ready to get the complete professional system now?
+              <a href="/complete-system" className="underline hover:text-white transition-colors">
                 See full implementation system →
               </a>
             </p>
