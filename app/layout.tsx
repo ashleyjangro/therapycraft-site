@@ -16,11 +16,14 @@ export const metadata: Metadata = {
   title: "Minecraft Therapy Training for Therapists | TherapyCraft 101 Free Guide",
   description: "Learn minecraft therapy techniques for kids and teens with autism, ADHD, and anxiety. Free TherapyCraft 101 guide includes setup, activities, and HIPAA-compliant protocols for therapists.",
   keywords: "minecraft therapy, minecraft therapy training, minecraft therapy activities, therapeutic minecraft, minecraft play therapy, autism therapy, ADHD therapy, neurodivergent therapy",
+  metadataBase: new URL('https://therapycraft.io'),
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
       { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-48x48.png', sizes: '48x48', type: 'image/png' },
     ],
+    apple: '/apple-icon.png',
   },
   openGraph: {
     title: "Minecraft Therapy Training for Therapists | TherapyCraft",
