@@ -46,6 +46,18 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
     <main className="min-h-screen bg-white">
+      {/* Navigation Banner */}
+      <div className="bg-gray-900 text-white py-3">
+        <div className="container mx-auto px-6 flex justify-between items-center">
+          <a href="/" className="text-xl font-bold text-green-400">TherapyCraft</a>
+          <nav className="flex gap-6 text-sm">
+            <a href="/blog" className="hover:text-green-400 transition-colors">Blog</a>
+            <a href="/complete-system" className="hover:text-green-400 transition-colors">Complete System</a>
+            <a href="/#free-guide" className="hover:text-green-400 transition-colors">Free Guide</a>
+          </nav>
+        </div>
+      </div>
+
       {/* Parent Banner */}
       <div className="bg-blue-600 text-white py-2 text-center">
         <p className="text-sm">
@@ -446,14 +458,15 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gray-900 text-gray-400 py-8">
         <div className="container mx-auto px-6 text-center">
+          <div className="flex justify-center gap-6 mb-4">
+            <a href="/blog" className="hover:text-white transition-colors">Blog</a>
+            <a href="/complete-system" className="hover:text-white transition-colors">Complete System</a>
+            <a href="/#free-guide" className="hover:text-white transition-colors">Free Guide</a>
+            <a href="https://steadywithin.com" className="hover:text-white transition-colors">Counseling in Castle Rock</a>
+          </div>
           <p>&copy; 2025 TherapyCraft. All rights reserved.</p>
           <p className="mt-2">
             Created by Ashley Jangro, LPCC | Questions? ashley@jangro.com
-          </p>
-          <p className="mt-2">
-            <a href="https://steadywithin.com" className="text-gray-400 hover:text-white transition-colors">
-              Counseling in Castle Rock
-            </a>
           </p>
         </div>
       </footer>
