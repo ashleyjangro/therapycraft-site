@@ -81,7 +81,7 @@ export default function Home() {
               <br />Powerful Therapy Tool
             </h1>
             <p className="text-xl md:text-2xl text-white mb-8 drop-shadow-md">
-              See how to use Minecraft to get real breakthroughs with anxious, resistant, and traumatized clients
+              See how to meet kids and teens in the world where they're already comfortable and confident
             </p>
             <div className="flex justify-center">
               <a
@@ -236,7 +236,7 @@ export default function Home() {
             Clinical Guide: 3 Real Case Studies from Minecraft Therapy
           </h2>
           <p className="text-xl mb-8 text-blue-100">
-            See exactly how Minecraft creates breakthroughs with clients who seemed unreachable
+            See exactly how Minecraft helps clients open up, connect, and express themselves
           </p>
           <div className="bg-white/10 backdrop-blur rounded-lg p-6 mb-8">
             <h3 className="text-xl font-semibold mb-4">What You'll Learn:</h3>
