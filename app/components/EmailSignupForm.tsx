@@ -13,6 +13,8 @@ export default function EmailSignupForm() {
     e.preventDefault();
     setIsSubmitting(true);
 
+    console.log('🔍 Form submission started:', { firstName, email });
+
     // AWeber form submission
     const formData = new FormData();
     formData.append('name', firstName);
@@ -22,18 +24,24 @@ export default function EmailSignupForm() {
     formData.append('meta_message', '1');
     formData.append('meta_required', 'name,email');
 
+    console.log('📤 Submitting to AWeber...');
+
     try {
       // Submit to AWeber
-      await fetch('https://www.aweber.com/scripts/addlead.pl', {
+      const response = await fetch('https://www.aweber.com/scripts/addlead.pl', {
         method: 'POST',
         body: formData,
         mode: 'no-cors' // AWeber doesn't support CORS
       });
 
+      console.log('✅ AWeber response received (opaque due to no-cors):', response.type);
+      console.log('🔀 Redirecting to thank-you page...');
+
       // Redirect to thank you page
       router.push('/thank-you');
     } catch (error) {
-      console.error('Form submission error:', error);
+      console.error('❌ Form submission error:', error);
+      alert('There was an error submitting the form. Please try again or email ashley@jangro.com directly.');
       setIsSubmitting(false);
     }
   };
