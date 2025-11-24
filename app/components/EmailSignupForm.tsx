@@ -1,134 +1,230 @@
 'use client';
 
-export default function EmailSignupForm() {
-  return (
-    <div className="w-full max-w-md mx-auto">
-      <h3 className="text-2xl font-bold text-white text-center mb-4">
-        Get 3 Real Case Studies Free
-      </h3>
-      <div className="bg-white rounded-2xl shadow-2xl p-8 border border-green-100">
-        <style dangerouslySetInnerHTML={{ __html: `
-          #therapycraft-aweber-form .af-body input.text {
-            width: 100% !important;
-            padding: 14px 16px !important;
-            font-size: 16px !important;
-            border: 2px solid #e5e7eb !important;
-            border-radius: 8px !important;
-            background-color: #f9fafb !important;
-            color: #000 !important;
-            box-sizing: border-box !important;
-            margin-top: 0 !important;
-            transition: all 0.3s ease !important;
-          }
-          #therapycraft-aweber-form .af-body input.text:focus {
-            border-color: #16a34a !important;
-            background-color: #fff !important;
-            outline: none !important;
-            box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1) !important;
-          }
-          #therapycraft-aweber-form .af-body label.previewLabel {
-            display: none !important;
-          }
-          #therapycraft-aweber-form .af-element {
-            margin-bottom: 12px !important;
-            padding: 0 !important;
-          }
-          #therapycraft-aweber-form .buttonContainer input.submit {
-            width: 100% !important;
-            padding: 16px 24px !important;
-            font-size: 18px !important;
-            font-weight: 600 !important;
-            background-color: #16a34a !important;
-            color: white !important;
-            border: none !important;
-            border-radius: 8px !important;
-            cursor: pointer !important;
-            transition: all 0.3s ease !important;
-            margin-top: 8px !important;
-            box-shadow: 0 4px 6px rgba(22, 163, 74, 0.25) !important;
-          }
-          #therapycraft-aweber-form .buttonContainer input.submit:hover {
-            background-color: #15803d !important;
-            transform: translateY(-1px) !important;
-            box-shadow: 0 6px 12px rgba(22, 163, 74, 0.3) !important;
-          }
-          #therapycraft-aweber-form {
-            border: none !important;
-            background-color: transparent !important;
-            box-shadow: none !important;
-            padding: 0 !important;
-          }
-          #therapycraft-aweber-form .af-body {
-            padding: 0 !important;
-            background: transparent !important;
-          }
-          #therapycraft-aweber-form .af-standards .af-element {
-            padding: 0 !important;
-          }
-        ` }} />
+import { useEffect, useRef } from 'react';
+import Script from 'next/script';
 
-        <div id="therapycraft-aweber-form">
-          <form method="post" className="af-form-wrapper" acceptCharset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl">
-            <div style={{ display: 'none' }}>
-              <input type="hidden" name="meta_web_form_id" value="898984390" />
-              <input type="hidden" name="meta_split_id" value="" />
-              <input type="hidden" name="listname" value="awlist6878292" />
-              <input type="hidden" name="redirect" value="https://therapycraft.io/thank-you" />
-              <input type="hidden" name="meta_adtracking" value="TherapyCraft_SignUp_Form" />
-              <input type="hidden" name="meta_message" value="1" />
-              <input type="hidden" name="meta_required" value="name,email" />
-              <input type="hidden" name="meta_tooltip" value="" />
-            </div>
-            <div id="af-form-898984390" className="af-form">
-              <div id="af-body-898984390" className="af-body af-standards">
-                <div className="af-element">
-                  <label className="previewLabel" htmlFor="awf_field-118050731">Name:</label>
-                  <div className="af-textWrap">
-                    <input
-                      id="awf_field-118050731"
-                      type="text"
-                      name="name"
-                      className="text"
-                      placeholder="First Name"
-                      required
-                    />
-                  </div>
-                </div>
-                <div className="af-element">
-                  <label className="previewLabel" htmlFor="awf_field-118050732">Email:</label>
-                  <div className="af-textWrap">
-                    <input
-                      className="text"
-                      id="awf_field-118050732"
-                      type="email"
-                      name="email"
-                      placeholder="Email Address"
-                      required
-                    />
-                  </div>
-                </div>
-                <div className="af-element buttonContainer">
-                  <input name="submit" className="submit" type="submit" value="Get My Free Guide Now →" />
-                </div>
-                <div className="af-element tag" style={{ display: 'none' }}>
-                  <input id="awf_tag-118050734" type="hidden" name="tag_118050734" value="therapycraft 101 pdf download" />
-                </div>
+export default function EmailSignupForm() {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  return (
+    <div className="w-full max-w-3xl mx-auto">
+      <div className="bg-white rounded-2xl shadow-2xl overflow-hidden p-8">
+        {/* Load Kit JavaScript */}
+        <Script
+          src="https://f.convertkit.com/ckjs/ck.5.js"
+          strategy="lazyOnload"
+        />
+
+        {/* Kit Form - will be rendered by Kit's script */}
+        <div ref={containerRef}>
+          <form
+            action="https://app.kit.com/forms/8798740/subscriptions"
+            className="seva-form formkit-form"
+            method="post"
+            data-sv-form="8798740"
+            data-uid="db4f9f5a11"
+            data-format="inline"
+            data-version="5"
+            data-options='{"settings":{"after_subscribe":{"action":"redirect","success_message":"Success! Now check your email to confirm your subscription.","redirect_url":"https://therapycraft.io/thank-you"},"analytics":{"google":null,"fathom":null,"facebook":null,"segment":null,"pinterest":null,"sparkloop":null,"googletagmanager":null},"modal":{"trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"powered_by":{"show":true,"url":"https://kit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic"},"recaptcha":{"enabled":false},"return_visitor":{"action":"show","custom_content":""},"slide_in":{"display_in":"bottom_right","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"sticky_bar":{"display_in":"top","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15}},"version":"5"}'
+            min-width="400 500 600 700 800"
+          >
+            <div data-style="minimal">
+              <div className="formkit-header" data-element="header">
+                <h2>Download Your Free Clinical Guide</h2>
               </div>
-            </div>
-            <div style={{ display: 'none' }}>
-              <img src="https://forms.aweber.com/form/displays.htm?id=HJwcnBwszJwM" alt="" />
+              <div className="formkit-subheader" data-element="subheader">
+                Get instant access to real case studies showing Minecraft therapy breakthroughs.
+              </div>
+              <ul className="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+              <div data-element="fields" data-stacked="true" className="seva-fields formkit-fields">
+                <div className="formkit-field">
+                  <input
+                    className="formkit-input"
+                    aria-label="First Name"
+                    name="fields[first_name]"
+                    required
+                    placeholder="First Name"
+                    type="text"
+                  />
+                </div>
+                <div className="formkit-field">
+                  <input
+                    className="formkit-input"
+                    name="email_address"
+                    aria-label="Email Address"
+                    placeholder="Email Address"
+                    required
+                    type="email"
+                  />
+                </div>
+                <button
+                  data-element="submit"
+                  className="formkit-submit"
+                  type="submit"
+                >
+                  <div className="formkit-spinner">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <span>Get Free Case Studies</span>
+                </button>
+              </div>
+              <div className="formkit-guarantee" data-element="guarantee" style={{marginBottom: '0'}}>
+                <p>🔒 Your information is 100% secure. No spam, ever.</p>
+              </div>
             </div>
           </form>
         </div>
 
-        <p className="text-xs text-center text-gray-600 mt-4">
-          🔒 Your information is 100% secure. No spam, ever.
+        <p className="text-sm text-center text-gray-600 -mt-2">
+          Instant PDF download • No credit card required
         </p>
       </div>
 
-      <p className="text-sm text-center text-white mt-4 font-medium">
-        Instant PDF download • No credit card required
-      </p>
+      <style jsx global>{`
+        /* Form container */
+        .formkit-form[data-uid="db4f9f5a11"] {
+          padding: 40px;
+        }
+
+        /* Hide Kit branding (paid plan) */
+        .formkit-powered-by-convertkit-container,
+        .formkit-powered-by-convertkit {
+          display: none !important;
+        }
+
+        /* Input fields - make them visible and styled */
+        .formkit-input {
+          width: 100%;
+          padding: 14px;
+          margin-bottom: 15px;
+          border: 2px solid #d1d5db;
+          border-radius: 8px;
+          font-size: 16px;
+          background: white;
+          color: black;
+          box-sizing: border-box;
+        }
+
+        .formkit-input:focus {
+          outline: none;
+          border-color: #16a34a;
+          box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
+        }
+
+        .formkit-input::placeholder {
+          color: #9ca3af;
+        }
+
+        /* Submit button */
+        .formkit-submit {
+          width: 100%;
+          padding: 14px 28px;
+          background-color: #16a34a;
+          color: white;
+          border: none;
+          border-radius: 8px;
+          font-size: 16px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: background-color 0.2s;
+        }
+
+        .formkit-submit:hover {
+          background-color: #15803d;
+        }
+
+        /* Fields container */
+        .formkit-fields {
+          margin: 25px 0;
+        }
+
+        .formkit-field {
+          margin-bottom: 15px;
+        }
+
+        /* Headers */
+        .formkit-header h2 {
+          margin: 0 0 10px 0;
+          color: #1f2937;
+          font-size: 27px;
+          font-weight: 700;
+        }
+
+        .formkit-subheader {
+          margin-bottom: 20px;
+          color: #6b7280;
+          font-size: 18px;
+        }
+
+        /* Guarantee text */
+        .formkit-guarantee {
+          margin: 15px 0;
+          text-align: center;
+          color: #4b5563;
+          font-size: 13px;
+        }
+
+        .formkit-guarantee p {
+          margin: 0;
+        }
+
+        /* Kit branding */
+        .formkit-powered-by-convertkit-container {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+        }
+
+        .formkit-powered-by-convertkit {
+          display: inline-block;
+          padding: 8px 16px;
+          background: #f3f4f6;
+          border-radius: 6px;
+          color: #6b7280;
+          text-decoration: none;
+          font-size: 12px;
+        }
+
+        .formkit-powered-by-convertkit:hover {
+          background: #e5e7eb;
+        }
+
+        /* Error messages */
+        .formkit-alert-error {
+          background: #fef2f2;
+          border: 1px solid #fecaca;
+          color: #991b1b;
+          padding: 12px;
+          border-radius: 6px;
+          margin-bottom: 15px;
+          list-style: none;
+        }
+
+        .formkit-alert-error:empty {
+          display: none;
+        }
+
+        /* Spinner */
+        .formkit-spinner {
+          display: none;
+        }
+
+        @media (max-width: 640px) {
+          .formkit-form[data-uid="db4f9f5a11"] {
+            padding: 24px;
+          }
+
+          .formkit-header h2 {
+            font-size: 24px;
+          }
+
+          .formkit-subheader {
+            font-size: 16px;
+          }
+        }
+      `}</style>
     </div>
   );
 }

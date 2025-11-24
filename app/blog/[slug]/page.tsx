@@ -238,7 +238,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           <div className="container mx-auto px-6 text-center">
             <p>&copy; 2025 TherapyCraft. All rights reserved.</p>
             <p className="mt-2">
-              Created by Ashley Jangro, LPCC | Questions? ashley@jangro.com
+              Created by Ashley Jangro, LPCC | Questions? ashley@therapycraft.io
             </p>
           </div>
         </footer>

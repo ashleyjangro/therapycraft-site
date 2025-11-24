@@ -538,7 +538,7 @@ export default function CompleteSystemSalesPage() {
                   Questions? Stuck on setup? Not sure how to adapt for a specific diagnosis?
                 </p>
                 <p className="text-gray-900 font-semibold mb-4">
-                  Email me directly at ashley@jangro.com
+                  Email me directly at ashley@therapycraft.io
                 </p>
                 <p className="text-gray-700">
                   I personally respond to every therapist using this system.
@@ -707,8 +707,8 @@ export default function CompleteSystemSalesPage() {
           <p className="mb-2">© 2025 TherapyCraft. All rights reserved.</p>
           <p className="mb-4">
             Created by Ashley Jangro, LPCC | Questions?{" "}
-            <a href="mailto:ashley@jangro.com" className="text-blue-400 hover:text-blue-300">
-              ashley@jangro.com
+            <a href="mailto:ashley@therapycraft.io" className="text-blue-400 hover:text-blue-300">
+              ashley@therapycraft.io
             </a>
           </p>
           <a

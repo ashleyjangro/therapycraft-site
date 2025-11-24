@@ -441,7 +441,9 @@ export default function Home() {
                 could help your child open up and engage.
               </p>
               <a
-                href="mailto:ashley@jangro.com?subject=TherapyCraft Parent Consultation"
+                href="https://calendly.com/ashleyjangro/therapycraft-consultation"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors"
               >
                 Book Free 15-Minute Consultation
@@ -466,7 +468,7 @@ export default function Home() {
           </div>
           <p>&copy; 2025 TherapyCraft. All rights reserved.</p>
           <p className="mt-2">
-            Created by Ashley Jangro, LPCC | Questions? ashley@jangro.com
+            Created by Ashley Jangro, LPCC | Questions? ashley@therapycraft.io
           </p>
         </div>
       </footer>

@@ -60,8 +60,8 @@ export default function ThankYouCompletePage() {
               </p>
               <p className="text-black">
                 <strong>Email me directly:</strong>{" "}
-                <a href="mailto:ashley@jangro.com" className="text-blue-600 hover:underline font-semibold">
-                  ashley@jangro.com
+                <a href="mailto:ashley@therapycraft.io" className="text-blue-600 hover:underline font-semibold">
+                  ashley@therapycraft.io
                 </a>
               </p>
             </div>

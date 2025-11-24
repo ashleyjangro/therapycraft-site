@@ -47,7 +47,7 @@ export default function ThankYou() {
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
               <h2 className="text-xl font-semibold mb-3 text-black">📧 Check Your Email Too</h2>
               <p className="text-black mb-3">
-                You should also receive an email from <strong>Ashley Jangro (ashley@jangro.com)</strong> with:
+                You should also receive an email from <strong>Ashley Jangro (ashley@therapycraft.io)</strong> with:
               </p>
               <ul className="text-left max-w-md mx-auto space-y-2 text-black">
                 <li>✓ Your case studies guide download link</li>
@@ -62,7 +62,7 @@ export default function ThankYou() {
                 Over the next few days, I'll send you helpful tips and real examples of how other therapists are using Minecraft successfully with their clients.
               </p>
               <p className="text-black">
-                <strong>Didn't receive the email?</strong> Check your spam folder or email me directly at ashley@jangro.com
+                <strong>Didn't receive the email?</strong> Check your spam folder or email me directly at ashley@therapycraft.io
               </p>
             </div>
             
@@ -82,8 +82,8 @@ export default function ThankYou() {
             <div className="mt-8 pt-8 border-t border-gray-200">
               <p className="text-black">
                 Questions? Email me at{" "}
-                <a href="mailto:ashley@jangro.com" className="text-blue-600 hover:underline">
-                  ashley@jangro.com
+                <a href="mailto:ashley@therapycraft.io" className="text-blue-600 hover:underline">
+                  ashley@therapycraft.io
                 </a>
               </p>
               <p className="text-black mt-2">
